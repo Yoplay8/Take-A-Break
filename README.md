@@ -1,5 +1,5 @@
 # Abstract view
-
+Blocks the window.
 # Full View (Beta)
 
 # Future Ideas
