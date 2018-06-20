@@ -1,12 +1,19 @@
 # Abstract view
 When the user starts the program they will have the option to set a timed interval for the breaks. Each break is set for 20% of the interval set at the start of the program. So if the user set 20 minutes they will be able to use the computer for 20 minutes then be blocked for 4 minutes. When they window is blocked a JFrame will block the entire screen, play some music, and prevent the user from closing the program at all costs. The program can be closed while not on a break.
 
-# Full View (Beta)
+# Full View
+When the user starts the program a small window will appear giving the user the option to set up a timed interval. The interval is restricted to be above 5 minutes. When the interval is set the window will turn into a smaller window allowing the user to close the program if needed. Each break will occur after the users set time. So if 20 minutes was entered, after 20 minutes a JFrame will block the screen for 20% of the time. So 20 minutes of computer use then 4 minutes of break, repeat.
 
+On each break a JFrame will block the entire screen, play a random set of music, display a random set of images, disable the mouse, and prevent the user from closing the program at all costs. I wanted to make sure the user was forced to take a break no matter what. If the user was watching a video, the music helps prevent them from listening while on break. If the user really doesn't want to be bothered at the moment and wants to close the program for a while, the mouse is focefully kept in the center of the screen when ever the JFrame loses focus and the mouse automatically clicks to give the JFrame focus again. While not on break the program can be closed.
 
 # Future Ideas
-I need to make a way to close the program.
+I was thinking about making a timer so the user knew when the break was about to occur but then I realized the user could easily close the program right before the break happened. Then on the other hand I could make it so on the last 20% of the remaining time the program could be prevented from closing or I could prevent the program from closing on the last 5 minutes. Since the time has to be 5 minutes or higher this shouldn't cause any issues. But the last 20% seems a little better because if the user set the time for an hour and they happen to catch the clock 10 minutes left and they happen to be watching a video they might close the program. If set for the last 20%, the program would be blocked for the last 12 minutes. Or maybe even at 50%, since the user has used the computer for at least half the time I should really enforce that they take a break by preventing them from closing the program. 
 
-re look over my code.
+Maybe instead of letting the user enter in the interval only once, which is at the start of the program. I should maybe let them enter in an interval when ever. If the set the interval for 20 minutes and want to change to 30 they can or if they want to set it to 10 and have already been using the computer for 15 minutes the break should automatically occur once confirmed. This isn't a super crucial need but could be useful.
+
+If I knew how to mute all sounds on the breaks I would but I couldnt figure that out so I added music instead. This isn't a big deal but since it was my original idea I want to implement this to show that I can.
+
+Maybe make the mouse stayed center on the screen when ever the mouse moves? I know when I start up 7 days and my mouse is forcefully kept in the center of the screen until the game finishes loading I get really annoyed. I like this idea. I might keep the mouse in the center the entire time instead of how I have it now where when the JFrame loses focus the mouse is kept in the center.
 
 # My Notes
+I don't like the feeling of not knowing when my computer is going to lock out. So I really think I want to add a timer of some sort. Maybe prevent the program from closing at the 50% mark then display a timer on the last 20% or have the time dislplayed the entire time.
